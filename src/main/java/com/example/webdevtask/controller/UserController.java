@@ -4,7 +4,6 @@ import com.example.webdevtask.entity.User;
 import com.example.webdevtask.pojo.UserPojo;
 import com.example.webdevtask.service.UserService;
 import com.example.webdevtask.shared.pojo.GlobalApiResponse;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 
@@ -28,7 +27,7 @@ public class UserController {
     }
 
     @PostMapping("/save")
-    public void save(@RequestBody @Valid UserPojo userPojo) {
+    public void save(@RequestBody  UserPojo userPojo) {
         this.userService.saveData(userPojo);
     }
 

@@ -14,7 +14,7 @@ public class UserImpl implements UserService {
     @Override
     public void saveData(UserPojo userPojo) {
         User user = new User();
-        user.setUserId(userPojo.getUserId());
+        user.setId(userPojo.getId());
         user.setUserName(userPojo.getUserName());
         userRepo.save(user);
     }

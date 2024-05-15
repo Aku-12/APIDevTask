@@ -13,7 +13,7 @@ import java.util.Collection;
 @Getter
 public class Role {
     @Id
-    private Integer roleId;
+    private Integer Id;
     @Column(name="role_name", nullable=false,length=100)
     private String roleName;
 
